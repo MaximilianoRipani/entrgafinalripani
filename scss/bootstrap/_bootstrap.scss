@@ -1,0 +1,44 @@
+.pepe a{
+    text-decoration: none;
+    font-family: 'Parisienne' ;
+    @include text-list;
+    font-size: 5rem;
+    color: $nombre-pagina;
+    background-color: black;
+}
+.navbar-nav .nav-link {
+    @include text-list;
+    text-align: right;            
+    flex-direction: row;
+    display: flex;
+    justify-content: end;
+    gap: 1.25rem;
+    background-color: $fondo-navbar-footer;
+    font-size: 2rem;
+    color: $texto-nav;
+}
+.nav-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: 14px;
+}
+.navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+}
+.container-fluid button{
+    background-color: wheat;
+}
+.container-fluid {
+    background-color: black;
+}
+.card2 a{
+    background-color: red;
+    border-color: red;
+    /*boton card*/
+    perspective: 1000px;
+    transition: transform 0.5s; 
+}
+.card2 a:hover{
+     transform: rotateY(360deg);
+    background-color: green;
+}
